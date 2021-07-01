@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ica6_Real.css">
+    <script src="ica6_Real.js" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body id = "grid1">
+    <header id = "Head">
+        <h1>Raj's Ica06 Motorcycle Purchase</h1>
+    </header>
+
+    <form action="https://thor.net.nait.ca/~demo/cmpe2000/ica04_formtest.php" method="GET" name="myForm" id="Container" target="_blank">
+
+        <label for="Moto" id="droplistL">Brand:</label>
+        <div id = "droplistR">
+            <select name="Moto" id = "select" size="4" style="background-color: gold;">
+                <option value="" disabled>Please Pick one</option>
+                <option value="Ducati">European</option>
+                <option value="Honda">Japanese</option>
+                <option value="Harley">American</option>
+            </select>
+            <img src="" alt="" id="images">
+        </div>
+
+        <label for="Model" id="ModelL">Model:</label>
+
+        <div id="ModelR">
+            <input type="radio" value="5000" name="Model">
+            <label for="5000">Scooter</label><br>
+            <input type="radio" value="10000" name="Model">
+            <label for="10000">Naked</label><br>    
+            <input type="radio" value="15000" name="Model">
+            <label for="15000">Rocket</label>
+        </div>
+
+        <label for="options" id="OptionsL">Options:</label>
+        <div id="OptionsR" name="options">
+            <input type="checkbox" Value="200" name="ABS">
+            <label for="ABS">Automatic Braking System</label><br>
+            <input type="checkbox" Value="300" name="TCS">
+            <label for="TCS">Traction Control System</label><br>
+            <input type="checkbox" Value="500" name="FMM">
+            <label for="FMM">Flight Mode Mapping</label>
+        </div>
+
+        <label for="downpayment" id="payL">Pre-Payment:</label>
+        <input type="text" name="downpayment" id="PayR">
+
+        <input type ="hidden" name="totalcost" value="">
+
+        <div id="status" name="output">output</div>
+
+        <div id="Submit">
+            <input type="submit" id="sub" style="width: 90%" value="Let's Buy">
+        </div>
+    </form>
+
+    <footer>
+        ©2020 by Raj<br>
+    
+        <section id="footer">
+        <script >
+            var d = new Date();
+            document.getElementById("footer").innerHTML = "last Modified On: "+d.toLocaleString();
+         </script>
+        </section>
+    </footer>
+</body>
+</html>
